@@ -1,0 +1,310 @@
+================================================================================
+Q&A PAIRS GENERATED FROM RAG SYSTEM
+================================================================================
+
+Category: flood_2018
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti comuni italiani erano a rischio per frane e alluvioni nel 2018?
+
+A: Il 91% dei comuni italiani, ovvero 7.275, era a rischio per frane e alluvioni nel 2018.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2018
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanta popolazione era a rischio alluvioni in Italia nel 2018?
+
+A: 1,28 milioni di abitanti.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2018
+Query Type: RAG
+Chunks Used: 5
+
+Q: Qual era la percentuale del territorio italiano a pericolosità elevata nel 2018?
+
+A: Il 16,6% del territorio italiano era classificato a pericolosità elevata nel 2018.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2018
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti edifici erano in aree allagabili secondo il report del 2018?
+
+A: 1.351.578 edifici in aree allagabili secondo il report del 2018.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Qual è stata la variazione percentuale della pericolosità da frana tra 2018 e 2021?
+
+A: +9,2%
+
+--------------------------------------------------------------------------------
+
+Category: flood_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti abitanti erano a rischio frane nel 2021?
+
+A: 1,3 milioni di abitanti erano a rischio frane nel 2021.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quale percentuale dei comuni italiani era a rischio nel 2021?
+
+A: 93,9% dei comuni italiani era a rischio nel 2021.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quante famiglie erano a rischio alluvioni nello scenario medio nel 2021?
+
+A: 2,9 milioni di famiglie.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2024
+Query Type: RAG
+Chunks Used: 5
+
+Q: Qual è stata la percentuale di aumento della pericolosità da frana nel 2024 rispetto al 2021?
+
+A: \+9,2% di aumento della pericolosità da frana nel 2024 rispetto al 2021.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2024
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti comuni italiani sono a rischio per fenomeni naturali secondo il report 2024?
+
+A: 94.5% dei comuni italiani (7.463) sono a rischio per fenomeni naturali.
+
+--------------------------------------------------------------------------------
+
+Category: flood_2024
+Query Type: NONE
+Chunks Used: 0
+
+Q: Qual è il comune più colpito dalle frane secondo il report 2024?
+
+A: Mi dispiace, posso rispondere solo a domande riguardanti alluvioni e incendi in Italia. Come posso aiutarti su questi argomenti?
+
+--------------------------------------------------------------------------------
+
+Category: flood_2024
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quale percentuale del territorio nazionale ricade in aree a pericolosità da frana nel 2024?
+
+A: 9,5% del territorio nazionale ricade in aree a pericolosità da frana nel 2024.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanta superficie totale è stata bruciata in Italia nel 2021?
+
+A: 68.654 ettari bruciati nel 2021.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quale regione ha avuto la maggiore superficie forestale bruciata nel 2021?
+
+A: Sicilia (4.437 ha)
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti ettari di aree protette sono stati bruciati nel 2021?
+
+A: 19.155 ettari bruciati nelle aree protette nel 2021.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Descrivi l'incendio del Montiferru-Planargia in Sardegna nel 2021
+
+A: Un singolo, vasto incendio nel Montiferru-Planargia (Sardegna) ha bruciato circa 13.000 ettari.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2021
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quale categoria forestale è stata più colpita dagli incendi nel 2021?
+
+A: Latifoglie sempreverdi (T2) con 20.299 ettari bruciati.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2023
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanta superficie forestale è stata bruciata in Italia nel 2023?
+
+A: La superficie forestale bruciata in Italia nel 2023 è di 15.698 ettari.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2023
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quali sono state le regioni più colpite dagli incendi nel 2023?
+
+A: Sicilia e Calabria, con oltre l'83% del totale nazionale. Palermo, con 4.354 ettari di foresta bruciata.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2023
+Query Type: RAG
+Chunks Used: 5
+
+Q: Qual è stata la provincia più colpita dagli incendi nel 2023?
+
+A: La Provincia di Palermo è stata la più colpita dagli incendi nel 2023, con 4.354 ha di foresta bruciata.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2023
+Query Type: RAG
+Chunks Used: 5
+
+Q: Che percentuale di ecosistemi forestali bruciati era in aree protette nel 2023?
+
+A: Il 21% degli ecosistemi forestali bruciati era in aree protette nel 2023.
+
+--------------------------------------------------------------------------------
+
+Category: wildfire_2023
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quanti ettari di latifoglie sempreverdi sono stati bruciati nel 2023?
+
+A: 9.853 ettari di latifoglie sempreverdi bruciati nel 2023.
+
+--------------------------------------------------------------------------------
+
+Category: comparative
+Query Type: RAG
+Chunks Used: 5
+
+Q: Come sono cambiate le aree a rischio alluvioni tra 2018 e 2021?
+
+A: Il **17,9%** del litorale italiano è in arretramento, con un aumento del **18,9%** della pericolosità idraulica media tra 2018 e 2021.
+
+--------------------------------------------------------------------------------
+
+Category: comparative
+Query Type: RAG
+Chunks Used: 5
+
+Q: Confronta la superficie forestale bruciata tra 2021 e 2023
+
+A: Superficie forestale bruciata: 2021 - 14.797 ettari, 2023 - 10.314 ettari. Riduzione del 4.483 ettari.
+
+--------------------------------------------------------------------------------
+
+Category: comparative
+Query Type: RAG
+Chunks Used: 5
+
+Q: Quali regioni sono state costantemente a rischio tra 2018 e 2024?
+
+A: Emilia-Romagna, Toscana, Veneto, Lombardia, Campania, Liguria.
+
+--------------------------------------------------------------------------------
+
+Category: comparative
+Query Type: RAG
+Chunks Used: 5
+
+Q: Come è evoluto il rischio idrogeologico in Italia negli ultimi anni?
+
+A: Negli ultimi anni, il rischio idrogeologico in Italia ha visto un aumento del 2,9% della superficie a pericolosità da frana e del 4% di quella a pericolosità idraulica media. Si è registrato un incremento del 9,2% delle superfici classificate a maggiore pericolosità (P3-P4). Le regioni più colpite sono Emilia-Romagna, Toscana, Veneto, Campania, Lombardia e Liguria.
+
+--------------------------------------------------------------------------------
+
+Category: general
+Query Type: DIRECT
+Chunks Used: 0
+
+Q: Quali sono le principali cause degli incendi boschivi in Italia?
+
+A: Le principali cause degli incendi boschivi in Italia sono molteplici e spesso interconnesse. Tra le principali cause si possono individuare:
+
+1. **Condizioni meteorologiche avverse**: Tempate, caldi periodi, venti forti e carestie possono aumentare il rischio di incendi boschivi.
+
+2. **Condizioni ambientali degradate**: La degradazione del paesaggio, come la deforestazione, la bonifica del suolo e la bonifica idrica, può aumentare la vulnerabilità del territorio.
+
+3. **Condizioni antropiche**: L'uso improprio del fuoco, la distruzione del paesaggio, la bonifica del suolo e la
+
+--------------------------------------------------------------------------------
+
+Category: general
+Query Type: RAG
+Chunks Used: 5
+
+Q: Cosa dice ISPRA sul dissesto idrogeologico in Italia?
+
+A: ISPRA indica che il 93,9% dei comuni italiani è a rischio per frane, alluvioni e/o erosione costiera, con un aumento del 2,9% della superficie a pericolosità da frana e del 4% di quella a pericolosità idraulica media, principalmente dovuto a miglioramenti delle conoscenze e mappatura di nuovi eventi.
+
+--------------------------------------------------------------------------------
+
+Category: general
+Query Type: RAG
+Chunks Used: 5
+
+Q: Qual è l'impatto degli incendi sulle aree protette in Italia?
+
+A: Gli incendi hanno bruciato 19.155 ettari in aree protette, con 5.570 ettari di ecosistemi forestali, rappresentando circa il 30% del totale bruciato. La Rete Natura 2000 ha visto 9.928 ettari bruciati, con parchi nazionali che hanno perso 4.404 ettari di copertura arborea. L'impatto è significativo, con aree colpite come ZSC, RNR, e parchi nazionali.
+
+--------------------------------------------------------------------------------
+
+Category: general
+Query Type: NONE
+Chunks Used: 0
+
+Q: Come influiscono i cambiamenti climatici sul rischio idrogeologico?
+
+A: Mi dispiace, posso rispondere solo a domande riguardanti alluvioni e incendi in Italia. Come posso aiutarti su questi argomenti?
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,80 @@
+# RAG Pipeline Configuration
+
+rag:
+  # Document processing
+  processing:
+    chunk_size: 512         # Token size per chunk
+    chunk_overlap: 50       # Overlap between chunks
+    max_chunks_per_document: 1000
+    
+  # Embedding model (IBM Granite multilingual)
+  embedding:
+    model_name: "ibm-granite/granite-embedding-278m-multilingual"
+    device: "cuda"          # GPU for faster encoding
+    dimension: 384          # Embedding dimension
+    normalize: true
+    
+  # Vector database (ChromaDB)
+  vector_db:
+    collection_name: "elementis_documents"
+    distance_metric: "cosine"
+    persist_directory: "./data/vector_db"
+    
+  # Retrieval settings (with reranker)
+  retrieval:
+    top_k: 5                # Final number of chunks to return
+    initial_k: 20           # Candidates for reranking (retrieve wide net)
+    use_reranker: true      # Enable Jina reranker (recommended)
+    score_threshold: 0.5    # Minimum similarity score
+    hybrid_alpha: 0.6       # Semantic weight (60% semantic, 40% keyword)
+    
+  # Reranker settings
+  reranker:
+    model_name: "jinaai/jina-reranker-v2-base-multilingual"
+    device: "cuda"          # GPU for cross-encoder
+    enabled: true           # Enable reranking by default
+    precision_improvement: "30-40%"  # Expected improvement
+    
+  # Document types to process
+  supported_formats:
+    - ".pdf"
+    - ".txt"
+    - ".docx"
+    - ".md"                 # Markdown files
+    
+# Docling settings (for PDF extraction)
+docling:
+  enabled: true
+  extract_tables: false     # Tables convert poorly - clean manually
+  extract_images: false     # Images not needed in text
+  ocr_enabled: true
+  
+# Query optimization
+query:
+  expansion: false
+  reformulation: false
+  max_query_length: 512
+  
+# Response generation (optimized settings)
+response:
+  max_new_tokens: 150       # Reduced from 512 for faster responses
+  temperature: 0            # Deterministic generation
+  do_sample: false          # Greedy decoding (no sampling)
+  include_sources: true     # Include source metadata
+  max_context_length: 2048  # Maximum context for generation
+  citation_format: "[Source: {filename}]"
+
+# Performance settings
+performance:
+  gpu_memory_target: "81%"  # Target GPU utilization
+  cache_clearing_threshold: 0.5  # Clear cache if <500MB available
+  sequential_model_loading: true  # Load models one at a time
+  
+# Optimization flags
+optimizations:
+  deterministic_generation: true   # Temperature=0, do_sample=False
+  memory_limits: true              # Set max_memory for models
+  active_monitoring: true          # Monitor GPU and clear cache
+  reranker_enabled: true           # Use cross-encoder reranking
+  embedding_on_gpu: true           # Embedding model on GPU
+

@@ -1,0 +1,87 @@
+# Model Configuration
+
+models:
+  # Default model settings
+  default:
+    name: "microsoft/Phi-4-mini-instruct"
+    temperature: 0          # Deterministic generation
+    max_tokens: 150         # Optimized for faster responses
+    top_p: 0.9
+    top_k: 40
+  
+  # LLM for RAG answer generation (configured in .env via LLM_MODEL)
+  rag_llm:
+    name: "microsoft/Phi-4-mini-instruct"  # Phi-4: 14B params, state-of-the-art
+    temperature: 0          # Deterministic generation
+    max_tokens: 150         # Optimized for speed (was 512)
+    device: "cuda"          # GPU with 4-bit quantization
+    max_memory: "7.5GiB"    # Memory limit to prevent overflow
+    description: "Microsoft Phi-4 Mini - 14B parameter model optimized for instruction following and RAG"
+  
+  # Router model for query classification
+  router:
+    name: "Qwen/Qwen3-1.7B"  # Qwen3 1.7B for classification
+    device: "cuda"          # GPU for better performance
+    max_memory: "2.0GiB"    # Memory limit for router (1.7B is smaller than Phi-4)
+    description: "Qwen3 1.7B - Intelligent query routing with reasoning capabilities"
+  
+  # Embedding model for document and query encoding
+  embedding:
+    name: "ibm-granite/granite-embedding-278m-multilingual"
+    device: "cuda"          # GPU for faster encoding
+    description: "IBM Granite multilingual embeddings - Optimized for Italian documents"
+  
+  # Reranker model for retrieval precision
+  reranker:
+    name: "jinaai/jina-reranker-v2-base-multilingual"
+    device: "cuda"          # GPU for cross-encoder scoring
+    description: "Jina cross-encoder reranker - Improves retrieval precision by 30-40%"
+  
+  # Alternative models (can be configured based on task)
+  alternatives:
+    - name: "meta-llama/Llama-3.2-1B-Instruct"
+      temperature: 0.7
+      max_tokens: 512
+      description: "Very fast, 1B parameters"
+    
+    - name: "google/gemma-2-2b-it"
+      temperature: 0.7
+      max_tokens: 512
+      description: "Good balance, 2B parameters"
+    
+    - name: "mistralai/Mistral-7B-Instruct-v0.3"
+      temperature: 0.7
+      max_tokens: 1024
+      description: "More capable, 7B parameters"
+
+# HuggingFace settings
+huggingface:
+  device: "cuda"          # Use GPU (was "auto")
+  use_4bit: true          # Use 4-bit NF4 quantization
+  trust_remote_code: true
+  
+# Generation parameters (optimized for production)
+generation:
+  temperature: 0          # Deterministic output
+  max_tokens: 150         # Faster responses (was 512)
+  do_sample: false        # Greedy decoding
+  stream: false
+  
+# GPU Memory Configuration
+gpu:
+  router_max_memory: "3.5GiB"   # Router memory limit
+  llm_max_memory: "7.5GiB"      # LLM memory limit
+  total_usage_target: "81%"     # Target GPU utilization
+  sequential_loading: true       # Load models sequentially
+  active_monitoring: true        # Monitor and clear cache automatically
+  
+# System prompts
+system_prompts:
+  default: "You are an AI assistant specialized in natural catastrophe analysis and environmental data."
+  
+  rag: "You are an AI assistant that answers questions based on provided documents about natural catastrophes. Provide concise, accurate answers citing specific data from the context."
+  
+  tool: "You are an AI assistant that analyzes geospatial data about natural catastrophes. Provide clear, data-driven insights."
+  
+  hybrid: "You are an AI assistant combining document knowledge and real-time data analysis for natural catastrophe monitoring."
+

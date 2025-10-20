@@ -1,0 +1,49 @@
+# Core Dependencies
+gradio>=4.0.0
+python-dotenv>=1.0.0
+
+# LLM and Agent Framework
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-huggingface>=0.0.1
+langchain-core>=0.1.0
+pydantic>=2.0.0
+transformers>=4.30.0
+torch>=2.0.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+hf-xet>=1.1.10
+
+# Document Processing
+docling>=1.0.0
+pypdf>=3.17.0
+pdfplumber>=0.10.0
+
+# Vector Database
+chromadb>=0.4.18
+sentence-transformers>=2.2.2
+keybert>=0.8.0
+
+# Data Processing
+pandas>=2.0.0
+geopandas>=0.14.0
+pyarrow>=14.0.0
+fastparquet>=2023.10.0
+
+# Geospatial
+shapely>=2.0.0
+fiona>=1.9.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.66.0
+requests>=2.31.0
+
+# Development
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.25.0
+
+# Testing (optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
